@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>Unit Converter</h1>
+    </div>
+    <section class="container">
+        <center>
+            <br><br>
+            <table border="0" cellspacing="20px" cellpading="5px" class="table-css">
+                <form method="post">
+                    <tr class="heading">
+                        <td>Value:</td>
+                        <td>&nbsp;</td>
+                        <td>Result:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" name="input" id="input" class="input-box">
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <input type="number" name="result" id="result" class="result-box" readonly>
+                        </td>
+                    </tr>
+                    <tr class="select-box">
+                        <td>
+                            <select name="inputType" id="inputType">
+                                <option value="centimeter">Centimeter</option>
+                                <option value="meter">Meter</option>
+                                <option value="kilometer">Kilometer</option>
+                                <option value="inches">Inches</option>
+                            </select>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <select name="resultType" id="resultType">
+                                <option value="inches">Inches</option>
+                                <option value="kilometer">Kilometer</option>
+                                <option value="meter">Meter</option>
+                                <option value="centimeter">Centimeter</option>
+                            </select>
+                        </td>
+                    </tr>
+            </table>
+            </form>
+        </center>
+    </section>
+    <script src="convert.js"></script>
+</body>
+
+</html>
